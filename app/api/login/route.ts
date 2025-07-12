@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
                     amount: 0
                 });
                 await newBalance.save();
-                responseData = { message: 'User created successfully', status: 200, data: newUser._id };
+                responseData = { message: 'User created successfully', status: 200, data: { user_id: newUser._id, number: newUser.number } };
                 return NextResponse.json(responseData);
                 }
 
