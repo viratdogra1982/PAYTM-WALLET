@@ -51,16 +51,12 @@ export async function POST(req: NextRequest) {
 
         return NextResponse.json(responseData);
     } catch (e: any) {
-        return NextResponse.json(
-            {
-                message: 'Unauthorized Access',
-            },
-            {
-                status: 401,
-                statusText: 'Unauthorized Access',
-            }
-        );
-    }
+  console.error("Login Error:", e); // log the real issue
+  return NextResponse.json(
+    { message: 'Unauthorized Access' },
+    { status: 401, statusText: 'Unauthorized Access' }
+  );
+}
 }
 
 
