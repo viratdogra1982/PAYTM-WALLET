@@ -122,7 +122,7 @@ export default function Home() {
               className="rounded-3xl border-4 border-blue-900/60 bg-gradient-to-br from-[#1a2740] to-[#22345a] p-2 shadow-2xl max-w-xs w-full"
             >
               <Image
-                src="/paytm-1.png"
+                src="https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-8b6c-622f-8a0f-36134b924a38/raw?se=2025-07-21T14%3A41%3A24Z&sp=r&sv=2024-08-04&sr=b&scid=9eeeeeef-28fa-5438-a1b0-735128ad49cc&skoid=add8ee7d-5fc7-451e-b06e-a82b2276cf62&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-20T18%3A34%3A55Z&ske=2025-07-21T18%3A34%3A55Z&sks=b&skv=2024-08-04&sig=zaIfTwRa7sY5EiU%2BCMhcuAhiGB2KLcIxb2wl6JcjmP8%3D"
                 alt="Illustration representing payment services"
                 width={500}
                 height={370}
@@ -170,23 +170,31 @@ export default function Home() {
             </motion.div>
           </div>
         </section>
-        
-        <div className="flex justify-center items-center w-full h-full mt-16 mb-16">
-            <motion.div
-              initial={{ opacity: 0, y: 50, scale: 0.95 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              whileHover={{ scale: 1.02, boxShadow: "0 0 48px #60a5fa" }}
-              whileTap={{ scale: 0.97 }}
-              transition={{ duration: 0.5}}
-              className="rounded-3xl border-4 border-blue-900/60 bg-gradient-to-br from-[#1a2740] to-[#22345a] p-2 shadow-2xl w-full max-w-6xl"
-            >
-              <img
-                src="/paytm-2.jpg"
-                alt="Illustration representing payment services"
-                className="rounded-2xl w-full h-auto"
-              />
-            </motion.div>
-          </div>
+    
+ <div
+  className="flex justify-center items-center w-full h-full mt-16 mb-16"
+  style={{ perspective: 1000 }}
+>
+  <motion.div
+    initial={{ rotateY: 0, opacity: 0 }}
+    animate={{ rotateY: 360, opacity: 1 }}
+    whileHover={{ scale: 1.05, rotateY: 380, boxShadow: "0 0 20px #60a5fa" }}
+    whileTap={{ scale: 0.95, rotateY: 400 }}
+    transition={{ duration: 2, ease: "easeInOut" }}
+    style={{
+      transformStyle: "preserve-3d",
+      backfaceVisibility: "hidden",
+      display: "inline-block",
+    }}
+  >
+    <img
+      src="https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-d878-622f-8955-fe832d8f349c/raw?se=2025-07-21T14%3A31%3A07Z&sp=r&sv=2024-08-04&sr=b&scid=a6f84499-f7e7-519f-af42-11faf653ccf7&skoid=add8ee7d-5fc7-451e-b06e-a82b2276cf62&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-21T12%3A23%3A12Z&ske=2025-07-22T12%3A23%3A12Z&sks=b&skv=2024-08-04&sig=75vVgrf/mANPqPf6K2LuTVWnRvs6PjJIrFw8uf62r7A%3D"
+      alt="Rotating Paytm Image"
+      className="rounded-2xl w-full h-auto"
+      style={{ willChange: "transform", cursor: "pointer" }}
+    />
+  </motion.div>
+</div>
           </motion.main>
       <section className="max-w-3xl mx-auto mt-12 mb-20 px-4">
         <h2 className="text-3xl font-bold mb-6 text-center text-blue-300">Frequently Asked Questions</h2>
