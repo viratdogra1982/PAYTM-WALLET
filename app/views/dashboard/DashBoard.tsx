@@ -188,7 +188,7 @@ export default function Home() {
     }}
   >
     <img
-      src="https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-d878-622f-8955-fe832d8f349c/raw?se=2025-07-21T14%3A31%3A07Z&sp=r&sv=2024-08-04&sr=b&scid=a6f84499-f7e7-519f-af42-11faf653ccf7&skoid=add8ee7d-5fc7-451e-b06e-a82b2276cf62&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-21T12%3A23%3A12Z&ske=2025-07-22T12%3A23%3A12Z&sks=b&skv=2024-08-04&sig=75vVgrf/mANPqPf6K2LuTVWnRvs6PjJIrFw8uf62r7A%3D"
+      src="./paytm-2.jpg"
       alt="Rotating Paytm Image"
       className="rounded-2xl w-full h-auto"
       style={{ willChange: "transform", cursor: "pointer" }}
